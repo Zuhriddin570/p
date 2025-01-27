@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sahifangizning qisqacha ta'rifi">
+    <meta name="keywords" content="sahifa, dasturlash, web, html, css, js">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zuhriddin">
+    <meta http-equiv="refresh" content="60" url="https://www.google.com">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Basic HTML Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.google.com">
+    <meta property="og:image" content="https://www.google.com/image.jpg">
+    <meta property="og:description" content="Sahifangizning qisqacha ta'rifi">
+    <meta property="og:site_name" content="Basic HTML Website">
+    <meta property="og:locale" content="uz_UZ">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Basic HTML Website">
+    <meta name="twitter:description" content="Sahifangizning qisqacha ta'rifi">
+    <meta name="twitter:image" content="https://www.google.com/image.jpg">
+    <meta name="twitter:site" content="@username">
+    <meta name="twitter:creator" content="@username">
+    <meta name="geo.region" content="UZ-80">
+    <meta name="geo.placename" content="Tashkent">
+    <meta name="geo.position" content="41.2995;69.2401">
+    <meta name="ICBM" content="41.2995, 69.2401">
+    <meta name="dc.title" content="Basic HTML Website">
+    <meta name="dc.keywords" content="sahifa, dasturlash, web, html, css, js">
+    <meta name="dc.creator" content="Zuhriddin">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="application-name" content="Basic HTML Website">
+    <meta name="referrer" content="no-referrer">
+    <meta name="copyright" content="2021">
+    <meta name="doc-title" content="Basic HTML Website">
+    <meta name="doc-type" content="Public">
+    <meta name="owner" content="Zuhriddin">
+    <meta name="rating" content="general">
+    <meta name="designer" content="Zuhriddin">
+    <meta name="publisher" content="Zuhriddin">
+    <meta name="email" content="Oo8GQ@example.com">
+    <meta name="contact" content="+998 932836116">
+    <meta name="distribution" content="global">
+    <meta name="date" content="2021-09-01">
+    <meta name="revised" content="Zuhriddin, 2025-25-01">
+    <meta name="copyright" content="2025">
+    <meta name="generator" content="Visual Studio Code">
+    <title>Basic HTML Website</title>
+    <link rel="icon" href="./favicon-32x32.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #100f0f;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        p {
+            text-align: start;
+            color: #333;
+        }
+
+        .m {
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        .container {
+            
+            border: solid 3px #333;
+        }
+
+        .main {
+           display: grid;
+              grid-template-columns: 0.5fr 1.5fr 0.7fr;
+            
+            border: solid 3px #333;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .Reviews {
+            border: solid 3px #333;
+            padding: 30px;
+            
+        }
+
+        .aylana {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            gap: 20px;
+        }
+        .review {
+            border: solid 3px #333;
+            padding: 20px;
+            border-radius: 50px;
+        }
+        .project {
+            border-right: solid 3px #333;
+            
+           
+        }
+        .project  p {
+           border-bottom: 3px solid #000;
+              
+              padding:5px 20px;
+        }
+        .pd{
+            padding: 0 20px;
+        }
+        .gray {
+            color:gray ;
+        }
+      .bt{
+        border-left: solid 3px #333;
+        padding:0 30px;
+      }
+        @media (max-width: 1024px) {
+  .main {
+    
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .main > div {
+    border: none;
+    padding: 10px;
+  }
+ .logo {
+    margin: auto;
+}
+nav {
+    margin: auto;
+}
+  .project {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .aylana {
+    grid-template-columns: 1fr;
+  }
+
+  .review {
+    padding: 15px;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .pd {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    gap: 5px;
+    
+  }
+
+  .review {
+    border-radius: 20px;
+    
+  }
+
+  .container {
+    border: none;
+  }
+
+  .main {
+    padding: 10px;
+    border: none;
+  }
+
+  .project p {
+    padding: 5px 10px;
+  }
+  .Reviews{
+    border: none;
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./favicon-32x32.png" alt="Logo">
+                <p>your name</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="projects.html" target="_blank">Projects</a></li>
+                    <li><a href="articles.html" target="_blank">Articles</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Frontend Developer</h1>
+        <p class="m gray">html only with proper layout, no styling</p>
+        
+    </div>
+
+    <div class="main">
+        <div class="project">
+            <h2 style="padding:0 20px;">Projects</h2>
+            <p>HTML Only Porfolio</p>
+            <p>Calculator</p>
+            <p>Quiz App</p>
+            <p>Countdown Timer</p>
+            <p style="border: none;">Product Upcoming Page</p>
+        </div>
+        <div>
+            <div class="pd">
+                <h2>Work Experience</h2>
+                <p>roadmap.sh</p>
+                <p>Solved all the frondend projects</p>
+                <a href="https://github.com/zuhriddin001">Visit my Profile</a>
+            </div>
+            <div class="pd"style="border-top: solid 3px #333; margin-top: 20px;" >
+                <h2>OpenSource Work</h2>
+                <p>Contributed to 50 opensource<br> projects.Made my own projects with<br> 200 GitHub stars.</p>
+                <a href="https://github.com/zuhriddin001?tab=stars">Visit my GitHub stars</a>
+            </div>
+        </div>
+        <div class="bt">
+            <h2>Education</h2>
+            <p>Graduated with 3.76 out of 4 <br>
+                CGPA.won Acme Hackathon. <br>
+                Organized 30 sessions.
+            </p>
+            <p style="font-size: 18px;">Cources I took:</p>
+            <p>-Object Oriented Programming <br>
+                -Data Structures and Algorithms <br>
+                -Web Engineering <br>
+                -Artificial Intelligence <br>
+                -Human Computer Interaction <br>
+                -Computer Graphics <br>
+                -Database Management Systems <br>
+                -Distributed Database Systems <br>
+                -Discreeet Mathematics
+            </p>
+        </div>
+    </div>
+
+
+    <div class="Reviews">
+        <h2>Reviews from my Teachers</h2>
+        <div class="aylana">
+            <div class="review">
+                <p>John Doe was a brilliant student;always stood out with his assignments</p>
+                <p class="gray">John Doe <br>
+                    Assistant Professor</p>
+            </div>
+            <div class="review">
+                <p>John Doe was a brilliant student;always stood out with his assignments</p>
+                <p class="gray">John Doe <br>
+                    Assistant Professor</p>
+            </div>
+            <div class="review">
+                <p>John Doe was a brilliant student;always stood out with his assignments</p>
+                <p class="gray">John Doe <br>
+                    Assistant Professor</p>
+            </div>
+        </div>
+        <footer style="text-align: center; margin:50px 0 ;">©️ all rights reserved 2025</footer>
+    </div>
+    
+</body>
+
+</html>
+
+
